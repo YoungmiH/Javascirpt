@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+     document.write("<h1>Movie Inventory</h1>");
+
+     var Genre = ["Comedy", "Action", "Drama"];
+     var Title = ["Hotel Transylvania", "The Avengers", "Taken 2"];
+     var Rating = ["PG", "PG-13"];
+     var Price = ["$10.99", "$11.99", "$12.99"];
+
+     document.write("Number of movies in the inventory: 3"+"<br>");
+
+     document.write(" Genre:" + Genre[0] + "<br>");
+     document.write(" Title:" + Title[0] + "<br>");
+     document.write(" Rating:" + Rating[0] + "<br>");
+     document.write(" Price:" + Price[0] + "<p>");
+
+     document.write(" Genre:" + Genre[1] + "<br>");
+     document.write(" Title:" + Title[1] + "<br>");
+     document.write(" Rating:" + Rating[1] + "<br>");
+     document.write(" Price:" + Price[1] + "<p>");
+
+     document.write(" Genre:" + Genre[2] + "<br>");
+     document.write(" Title:" + Title[2] + "<br>");
+     document.write(" Rating:" + Rating[1] + "<br>");
+     document.write(" Price:" + Price[2] + "<p>");
+
+     document.write("Pop and display the popped movie."+"<p>");
+
+     Genrepop = Array();
+     var Genre1 = Genrepop.push("Comedy");
+     Genre1 = Genrepop.push("Action");
+     Genre1 = Genrepop.push("Drama");
+
+     Titlepop = Array();
+     var Title1 = Titlepop.push("Hotel Transylvania");
+     Title1 = Titlepop.push("The Avengers");
+     Title1 = Titlepop.push("Taken 2");
+
+     Ratingpop = Array();
+     var Rating1 = Ratingpop.push("PG");
+     Rating1 = Ratingpop.push("PG-13");
+
+     Pricepop = Array();
+     var Price1 = Pricepop.push("$10.99");
+     Price1 = Pricepop.push("$11.99");
+     Price1 = Pricepop.push("$12.99");
+
+     document.write(" Genre:" + Genrepop[2] + "<br>");
+     document.write(" Title:" + Titlepop[2] + "<br>");
+     document.write(" Rating:" + Ratingpop[1] + "<br>");
+     document.write(" Price:" + Pricepop[2] + "<p>");
+
+
+     document.write("Number of movies in the inventory: 2"+"<br>"+
+     "Pop another one and display the popped movie."+"<p>");
+
+     document.write(" Genre:" + Genrepop[1] + "<br>");
+     document.write(" Title:" + Titlepop[1] + "<br>");
+     document.write(" Rating:" + Ratingpop[1] + "<br>");
+     document.write(" Price:" + Pricepop[1] + "<p>");
+
+     document.write(" Genre:" + Genrepop[0] + "<br>");
+     document.write(" Title:" + Titlepop[0] + "<br>");
+     document.write(" Rating:" + Ratingpop[0] + "<br>");
+     document.write(" Price:" + Pricepop[0] + "<p>");
+
+     var pop = Genrepop.pop();
+     var pop = Titlepop.pop();
+     var pop = Ratingpop.pop();
+     var pop = Pricepop.pop();
+
+     document.write("Number of movies in the inventory: 1"+"<br>"+"Unshift the last popped movie and display the inventory."+"<p>"+
+     "Number of movies in the inventory: 2"+"<p>");
+
+     var Genre2 = Array();
+     var genre2 = Genre2.push("Comedy", "Action", "Drama");
+     var count = Genre2.unshift(genre2);
+
+     var Title2 = Array();
+     var title2 = Title2.push("Hotel Transylvania", "The Avengers", "Taken 2");
+     var count1 = Title2.unshift(title2);
+
+     var Rating2 = Array();
+     var rating2 = Rating2.push("PG", "PG-13");
+     var count2 = Rating2.unshift(rating2);
+
+     var Price2 = Array();
+     var price2 = Price2.push("$10.99", "$11.99", "$12.99");
+     var count3 = Price2.unshift(price2);
+
+     document.write(" Genre: " + Genre2[2] + "<br>");
+     document.write(" Title: " + Title2[2] + "<br>");
+     document.write(" Rating: " + Rating2[2] + "<br>");
+     document.write(" Price: " + Price2[2] + "<p>");
+
+     document.write(" Genre: " + Genre2[1] + "<br>");
+     document.write(" Title: " + Title2[1] + "<br>");
+     document.write(" Rating: " + Rating2[1] + "<br>");
+     document.write(" Price: " + Price2[1] + "<p>");
+
+     document.write("Do another pop and display the popped movie."+"<p>");
+
+     Genrepop1 = Array();
+     var Genre3 = Genrepop.push("Comedy");
+     Genre3 = Genrepop.push("Action");
+     Genre3 = Genrepop.push("Drama");
+
+     Titlepop1 = Array();
+     var Title3 = Titlepop.push("Hotel Transylvania");
+     Title3 = Titlepop.push("The Avengers");
+     Title3 = Titlepop.push("Taken 2");
+
+     Ratingpop1 = Array();
+     var Rating3 = Ratingpop.push("PG");
+     Rating3 = Ratingpop.push("PG-13");
+
+     Pricepop1 = Array();
+     var Price3 = Pricepop.push("$10.99");
+     Price3 = Pricepop.push("$11.99");
+     Price3 = Pricepop.push("$12.99");
+
+     document.write(" Genre:" + Genrepop[0] + "<br>");
+     document.write(" Title:" + Titlepop[0] + "<br>");
+     document.write(" Rating:" + Ratingpop[0] + "<br>");
+     document.write(" Price:" + Pricepop[0] + "<p>");
+
+     var pop = Genrepop1.pop();
+     var pop = Titlepop1.pop();
+     var pop = Ratingpop1.pop();
+     var pop = Pricepop1.pop();
+
+     document.write("Number of movies in the inventory: 1"+"<br>");
+     document.write("Display the inventory."+"<p>");
+
+     document.write(" Genre:" + Genrepop[1] + "<br>");
+     document.write(" Title:" + Titlepop[1] + "<br>");
+     document.write(" Rating:" + Ratingpop[2] + "<br>");
+     document.write(" Price:" + Pricepop[1] + "<p>");
+
+     document.write("Push the first popped and display the inventory."+"<p>");
+     document.write("Number of movies in the inventory: 2"+"<p>");
+
+     document.write(" Genre:" + Genrepop[1] + "<br>");
+     document.write(" Title:" + Titlepop[1] + "<br>");
+     document.write(" Rating:" + Ratingpop[2] + "<br>");
+     document.write(" Price:" + Pricepop[1] + "<p>");
+
+     document.write(" Genre:" + Genrepop[4] + "<br>");
+     document.write(" Title:" + Titlepop[4] + "<br>");
+     document.write(" Rating:" + Ratingpop[2] + "<br>");
+     document.write(" Price:" + Pricepop[4] + "<p>");
+
+     document.write("Shift and display the shifted movie."+"<p>");
+
+     var Genre2 = Array();
+     var genre2 = Genre2.push("Comedy", "Action", "Drama");
+     var genre2 = Genre2.shift();
+
+     var Title2 = Array();
+     var title2 = Title2.push("Hotel Transylvania", "The Avengers", "Taken 2");
+     var title2 = Title2.shift();
+
+     var Rating2 = Array();
+     var rating2 = Rating2.push("PG", "PG-13");
+     var rating2 = Rating2.shift();
+
+     var Price2 = Array();
+     var price2 = Price2.push("$10.99", "$11.99", "$12.99");
+     var price2 = Price2.shift();
+
+     document.write(" Genre: " + Genre2[0] + "<br>");
+     document.write(" Title: " + Title2[0] + "<br>");
+     document.write(" Rating: " + Rating2[0] + "<br>");
+     document.write(" Price: " + Price2[0] + "<p>");
+
+     document.write("Number of movies in the inventory: 1"+"<br>");
+     document.write("Display the inventory."+"<p>");
+
+     document.write(" Genre:" + Genre[2] + "<br>");
+     document.write(" Title:" + Title[2] + "<br>");
+     document.write(" Rating:" + Rating[1] + "<br>");
+     document.write(" Price:" + Price[2] + "<p>");
+    </script>
+  </body>
+</html>

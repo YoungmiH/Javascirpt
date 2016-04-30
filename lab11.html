@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    .box {
+      width: 50%;
+      height: 100px;
+      padding: 10px;
+      margin: 10px;
+      background-color: yellow;
+    }
+    .box1
+    {
+      width: 50%;
+      height: 100px;
+      padding: 10px;
+      margin: 10px;
+      background-color: lightgreen;
+      border: 5px solid red;
+    }
+
+    </style>
+    <script type="text/javascript">
+    function yellowInnerHTML() {
+       var Div = document.getElementById("divID");
+       Div.innerHTML = "<h1><a href='javascript:onclick=showMessage()'>Click me to add a new movie.</h1></a>"
+     }
+
+     // Creates a green HTML box
+    function greenInnerHTML(movieText) {
+      // Creates a div HTML element and assigns it Div
+      var Div = document.createElement('div');
+
+      // Give the div HTML element a class of box1
+      Div.setAttribute('class','box1');
+
+      // Give the div HTML element the movie text inside h1 tags
+      Div.innerHTML = "<h1>"+movieText+"</h1>";
+
+    //  Div.appendChild(Text);
+      //var Div = document.getElementsByTagName("div")[0];
+      // Get the yellow box
+      var Div2 = document.getElementById("divID");
+      // Get the yellow box's parent, and insert green Div before yellow Div
+      Div2.parentNode.insertBefore(Div, Div2);
+    }
+    </script>
+
+  </head>
+  <body>
+
+
+    <div id="divID" class="box">
+    </div>
+    <!-- <div id="divID1" class="box1">
+    </div> -->
+
+    <script type="text/javascript">
+
+    yellowInnerHTML();
+
+    function showMessage(){
+        // This opens a prompt, and saves the user input to movieText variable
+        var movieText = prompt("Enter your movie");
+        // we call greenInnerHTML function and pass it the movieText variable
+        greenInnerHTML(movieText);
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+
+	var myWin = window.open("", "", "height=500,width=800, resizable");
+
+	var counter=0, max=10;
+
+
+	myWin.document.write("height = " + screen.height);
+	myWin.document.write("<br>");
+	myWin.document.write("width = " + screen.width);
+	myWin.document.write("<p>");
+
+	function incrementCounter() {
+	 counter++;
+
+
+	myWin.document.write("The counter is now at " + counter + "<br>");
+
+	 if (counter < max) {
+		setTimeout(incrementCounter,500);
+	 } else {
+		   myWin.resizeTo(300,400);
+
+	 }
+	}
+	setTimeout(incrementCounter,500);
+	myWin.document.write("</p>");
+	myWin.document.write("The language is: " + navigator.language);
+	myWin.document.write("<br>");
+	myWin.document.write("The platform is: " + navigator.platform);
+	myWin.document.write("<br>");
+	myWin.document.write("The appCodeName is: " + navigator.appCodeName);
+	myWin.document.write("<br>");
+	myWin.document.write("The appCodeName is: " + navigator.appName);
+	myWin.document.write("<p>");
+
+  </script>
+
+</head>
+	<script type="text/javascript">
+	myWin.document.body.style.background="yellow"
+	myWin.document.body.style.color="green"
+	</script>
+</body>
+</html>

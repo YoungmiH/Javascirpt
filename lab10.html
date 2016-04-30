@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CIS 89C: Client Side Programming
+  with JavaScript</title>
+  <meta charset="utf-8">
+<style type="text/css">
+   .yellow {background-color: yellow;}
+   .lightgreen {background-color: lightgreen;}
+
+</style>
+
+  <script type="text/javascript">
+    function yellowInnerHTML() {
+       var theDiv = document.getElementById("div1");
+       theDiv.innerHTML = "<p>I love watching movies.</p><p>This is one of my favorites:</p>";
+    }
+
+    function greenInnerHTML() {
+       var Div = document.getElementById("div2");
+       Div.innerHTML = prompt("What movie do you like?") +" is a good movie.";
+    }
+    function titleInnerHTML(){
+      var aDiv1 = document.getElementById("div3");
+      aDiv1.innerHTML = "<h1>"+ prompt("One of my favorites")+"</h1>";
+    }
+    function imageInnerHTML() {
+      var aDiv = document.getElementById("div4");
+      aDiv.innerHTML = "<p>A picture is worth a thousand words.</p>"+"<img src='images.jpg'>";
+    }
+
+  </script>
+</head>
+<body>
+        <div id="div1" class="yellow">
+        </div>
+
+        <div id="div2" class="lightgreen">
+        </div>
+
+        <div id="div3">
+        </div>
+
+        <div id="div4" class="lightgreen">
+
+        </div>
+
+  <script type="text/javascript">
+  yellowInnerHTML();
+  greenInnerHTML();
+  titleInnerHTML();
+  imageInnerHTML();
+
+
+
+  </script>
+
+
+</body>
+</html>

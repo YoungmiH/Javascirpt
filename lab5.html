@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+
+</head>
+<body>
+<script type="text/javascript">
+
+function newMovie(genre, title, rating, price) {
+this.genre = genre;
+this.title = title;
+this.rating = rating;
+this.price = price;
+}
+
+newMovie.prototype.displayproperties = function()
+{
+document.write ("Genre: " + this.genre + "<br>");
+document.write ("Title: " + this.title + "<br>");
+document.write ("Rating: " + this.rating + "<br>");
+document.write ("Price: " + this.price + "<p>");
+}
+
+var Movie1 = new newMovie("Fantasy", "The Martian", "8,2", "9")
+var Movie2 = new newMovie("Fantasy", "Pan", "6,1", "9")
+
+Movie1.displayproperties()
+Movie2.displayproperties()
+
+</script>
+</body>
+</html>

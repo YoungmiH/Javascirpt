@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    function showtext(){
+      var reg_exp = /[A-Za-z0-9]*/;
+        var result = reg_exp.test(text);
+        document.write("<h3>The text is: ", text, "</h3>"+"<p>Match a string that contains at least one character in A-Z, a-z, 0-9 and_</p>");
+          if (result) {
+          document.write("It's a match");
+          }
+          else {
+          document.write("No match");
+          }
+    }
+    function showtext1(){
+      var reg_exp = /[^0-9]/;
+        var result = reg_exp.test(text);
+        document.write("<p>Match a string that does not contain a number between 0 and 9</p>");
+          if (result) {
+          document.write("It's a match");
+          }
+          else {
+          document.write("No match");
+          }
+    }
+    function showtext2(){
+      var reg_exp = /[A-Z]{1}[a-z]+\s/;
+        var result = reg_exp.test(text);
+        document.write("<p>Search for an uppercase letter, followed by one or more lowercase letters, followed by a space.</p>");
+          if (result) {
+          document.write("It's a match");
+          }
+          else {
+          document.write("No match");
+          }
+    }
+    function showtext3(){
+      var reg_exp = /[#1-5.\d]/;
+        var result = reg_exp.test(text);
+        document.write("<p>Find a # sign, followed by exactly 5 repeating digits, a period and another digit.</p>");
+          if (result) {
+          document.write("It's a match");
+          }
+          else {
+          document.write("No match");
+          }
+    }
+
+
+    </script>
+  </head>
+  <body style="background-color:yellow">
+  <script type="text/javascript">
+  var text = prompt("Enter a text(stop to exit)");
+
+         while(text!="stop") {
+
+           document.body.innerHTML = '';
+           showtext(text);
+           showtext1(text);
+           showtext2(text);
+           showtext3(text);
+
+           var text = prompt("Enter a text(stop to exit)");
+
+         }
+  //var text = prompt("Enter a text(stop to exit)");
+  //  for (i=1; i <=10; i++){
+    //if(text!="stop") {
+      //showtext(text);
+      //showtext1(text);
+      //showtext2(text);
+      //showtext3(text);
+      //var text = prompt("Enter a text(stop to exit)");
+    //} else {
+  //break;
+    //}
+//}
+  </script>
+  </body>
+</html>

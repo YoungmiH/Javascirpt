@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+     <body>
+        <div id="box">
+        <h1 id="box">My Age</h1>
+        <h1 id="dateField" > </h1>
+        <h1 id="birthField" > </h1>
+
+        </div>
+
+          <script type="text/javascript">
+          var myDiv = document.getElementById("box");
+            myDiv.style.fontFamily = "Comic Sans MS, Arial, Verdana";
+            myDiv.style.textAlign = "center";
+            myDiv.style.borderRadius = "100px";
+            myDiv.style.border = "1px solid black";
+            myDiv.style.height = "300px";
+            myDiv.style.padding ="50px";
+            myDiv.style.float ="auto";
+            myDiv.style.marginLeft ="50px";
+            myDiv.style.marginRight ="50px";
+            myDiv.style.marginTop ="150px";
+
+          var myDate = new Date();
+          var dateString = myDate.toLocaleDateString() + " " + myDate.toLocaleTimeString();
+          var dateLoc = document.getElementById("dateField");
+          dateLoc.innerHTML = "Today is " + dateString;
+
+          function Birth() {
+            var birthday = document.getElementById("birthField");
+            birthday.innerHTML = "I was born on " + month + " " + day + ", " + year;
+          }
+          var month = prompt("What month were you born in?");
+          var day = prompt("What day were you born on?");
+          var year = prompt("What year were you born in?");
+          Birth(month,day,year)
+
+
+          </script>
+      </body>
+    </html>
